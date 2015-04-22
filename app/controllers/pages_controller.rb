@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  # 當收到 GET /home 或 GET / 會執行
+  	# 當收到 GET /home 或 GET / 會執行
 	def home
 		# render 'pages/home'
 		# render 'home'
@@ -14,7 +14,7 @@ class PagesController < ApplicationController
 		@name = "#{params[:first_name]} #{params[:last_name]}"  # => "大豆"
 		#params['name']                                         # => "大豆"
 
-		render layout: 'admin'                                  # 指定版型
+		# render layout: 'admin'                                # 指定版型
 		#render 'pages/about', layout: 'admin'                  # 仔細一點可以寫成這樣
 	end
 
