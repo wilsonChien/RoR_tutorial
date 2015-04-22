@@ -1,0 +1,11 @@
+<!--<form action="/about" method="post">-->
+	<!--<%= token_tag %>-->
+<%= form_tag about_path do %>
+	<!--<input type="text" name="first_name">
+	<input type="text" name="last_name">
+	<input type="submit">-->
+	<%= text_field_tag :first_name %>
+	<%= text_field_tag :last_name %>
+	<%= submit_tag %>
+<% end %>
+<!--</form>-->

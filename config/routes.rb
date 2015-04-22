@@ -7,9 +7,10 @@ Rails.application.routes.draw do
   #get 'about/me', to: 'pages#about'
   #get 'pages/home'
   #get 'pages/about'
-  #get 'home', 'about', 'math', controller: 'pages'
-  get :home, :math, controller: :pages
-  get :about, controller: :pages, path: :me
+  get 'home', 'math', :form, controller: 'pages'
+  post :about, controller: :pages
+  #get :home, :math, controller: :pages
+  #get :about, controller: :pages, path: :me
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
